@@ -17,6 +17,16 @@ namespace TARge20.Data
 
         // näide, kuidas teha, kui lisate domaini alla ühe objekti
         // migratsioonid peavad tulema siia libary-sse e TARge20.Data alla.
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<BranchOffice> BranchOffices { get; set; }
         public DbSet<Employee> Employee { get; set; }
+        public DbSet<Children> Childrens { get; set; }
+        public DbSet<HealthInspection> HealthInspections { get; set; }
+        public DbSet<SickLeave> SickLeaves { get; set; }
+        public DbSet<JobTitle> JobTitles { get; set; }
+        public DbSet<Vacation> Vacations { get; set; }
+        public DbSet<AccessPermission> AccessPermissions { get; set; }
+        public DbSet<DataSystem> DataSystems { get; set; }
+        public DbSet<ItemsToRent> ItemsToRent { get; set; }
     }
 }
